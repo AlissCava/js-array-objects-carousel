@@ -1,0 +1,54 @@
+/* Stile del corpo della pagina */
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Stile del container del carosello */
+.carousel-container {
+    width: 80%;
+    max-width: 600px;
+}
+
+/* Stile del carosello e degli slide */
+.carousel {
+    position: relative;
+    overflow: hidden;
+}
+
+.slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Stile dell'immagine */
+#carousel-image {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Stile dei pulsanti di navigazione */
+#prev-btn,
+#next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#prev-btn {
+    left: 10px;
+}
+
+#next-btn {
+    right: 10px;
+}
